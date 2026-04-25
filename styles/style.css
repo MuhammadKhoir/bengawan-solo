@@ -1,0 +1,103 @@
+body{
+    background-color: #EDE4C2;    
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* HEADER */
+header{
+    padding: 15px 30px;
+    background-color: #35292A;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin: 0;
+}
+
+/* NAVBAR */
+nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #EC1A23;
+    font-weight: bold;
+}
+
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* BANNER */
+#banner{
+    position: relative;
+    height: 400px;
+    background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* OVERLAY */
+.overlay{
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 100px;
+}
+
+.overlay h1{
+    font-family: 'Copperplate', 'Papyrus', fantasy;
+    font-size: 60px;        
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #EC1A23;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #c5141c;
+}
+
+/* MENU SECTION */
+#menu{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#menu h2{
+    margin-bottom: 30px;
+}
+
+/* CARD CONTAINER */
+.menu-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.card{
+    background: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-top: 0;
+}
