@@ -1,11 +1,26 @@
-body{
+/*
+=================================================
+          PENGATURAN DASAR (GLOBAL)
+=================================================
+*/
+body {
     background-color: #EDE4C2;    
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
+/*
+=================================================
+        AKHIR PENGATURAN DASAR (GLOBAL)
+=================================================
+*/
 
-/* HEADER */
-header{
+
+/*
+=================================================
+                 HEADER & NAVIGASI
+=================================================
+*/
+header {
     padding: 15px 30px;
     background-color: #35292A;
     color: white;
@@ -14,25 +29,35 @@ header{
     align-items: center;
 }
 
-.logo{
+.logo {
     margin: 0;
 }
 
-/* NAVBAR */
-nav a{
+nav a {
     margin-left: 20px;
     text-decoration: none;
     color: #EC1A23;
     font-weight: bold;
 }
 
-
-nav a:hover{
+nav a:hover {
     text-decoration: underline;
 }
 
-/* BANNER */
-#banner{
+
+/*
+=================================================
+              AKHIR HEADER & NAVIGASI
+=================================================
+*/
+
+
+/*
+=================================================
+               BANNER (HERO SECTION)
+=================================================
+*/
+#banner {
     position: relative;
     height: 400px;
     background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover no-repeat;
@@ -41,8 +66,7 @@ nav a:hover{
     align-items: center;
 }
 
-/* OVERLAY */
-.overlay{
+.overlay {
     background: rgba(0,0,0,0.5);
     padding: 40px;
     text-align: center;
@@ -50,14 +74,13 @@ nav a:hover{
     border-radius: 100px;
 }
 
-.overlay h1{
+.overlay h1 {
     font-family: 'Copperplate', 'Papyrus', fantasy;
     font-size: 60px;        
     margin-bottom: 10px;
 }
 
-/* BUTTON */
-.btn{
+.btn {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -67,30 +90,121 @@ nav a:hover{
     border-radius: 5px;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #c5141c;
 }
+/*
+=================================================
+             AKHIR BANNER (HERO SECTION)
+=================================================
+*/
+/*
+=================================================
+             SLIDER ULASAN (TESTIMONI)
+=================================================
+*/
+.ulasan-section {
+    padding: 60px 20px;
+    background-color: #f4ede1; /* Warna krem yang sedikit beda biar menonjol */
+    text-align: center;
+}
 
-/* MENU SECTION */
-#menu{
+.ulasan-section h2 {
+    color: #35292A;
+    margin-bottom: 30px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    gap: 15px; /* Jarak antara tombol dan kartu */
+}
+
+/* Ini "Jendela" pembatasnya */
+.slider-wrapper {
+    width: 80%;
+    overflow: hidden; /* Sembunyikan kartu yang meluber keluar batas */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Ini "Rel" keretanya */
+.slider-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out; /* Ini kunci animasi geser mulusnya! */
+}
+
+/* Ini "Gerbong" ulasannya */
+.slide-card {
+    min-width: 100%; /* Memaksa tiap kartu lebarnya 100% dari jendela */
+    box-sizing: border-box;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.bintang {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.komen {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Tombol Kiri Kanan */
+.slider-btn {
+    background-color: #EC1A23;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slider-btn:hover {
+    background-color: #35292A;
+    transform: scale(1.1);
+}
+/*
+=================================================
+          AKHIR SLIDER ULASAN (TESTIMONI)
+=================================================
+*/
+
+/*
+=================================================
+               DAFTAR MENU & KARTU
+=================================================
+*/
+#menu {
     padding: 50px 20px;
     text-align: center;
 }
 
-#menu h2{
+#menu h2 {
     margin-bottom: 30px;
 }
 
-/* CARD CONTAINER */
-.menu-container{
+.menu-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-/* CARD */
-.card{
+.card {
     background: white;
     padding: 20px;
     width: 200px;
@@ -98,6 +212,324 @@ nav a:hover{
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.card h3{
+.card h3 {
     margin-top: 0;
 }
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.btn-card {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    background: #EC1A23;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-pesan {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    background-color: #EC1A23;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-pesan:hover {
+    background-color: #c5141c;
+    transform: scale(1.03);
+}
+/*
+=================================================
+             AKHIR DAFTAR MENU & KARTU
+=================================================
+*/
+
+
+/*
+=================================================
+             NOTIFIKASI (TOAST POP-UP)
+=================================================
+*/
+.toast {
+    visibility: hidden;
+    min-width: 280px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px 20px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    font-size: 15px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
+/*
+=================================================
+           AKHIR NOTIFIKASI (TOAST POP-UP)
+=================================================
+*/
+/*
+=================================================
+             KERANJANG BELANJA (CART)
+=================================================
+*/
+.cart-section {
+    padding: 50px 20px;
+    background-color: #EDE4C2; /* Warna background sedikit lebih terang dari body */
+}
+
+.cart-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Efek melayang/shadow yang lembut */
+    border-top: 5px solid #EC1A23; /* Garis aksen merah Bengawan Solo di atas */
+}
+
+.cart-container h2 {
+    text-align: center;
+    color: #35292A;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.cart-items-list {
+    min-height: 80px;
+}
+
+.empty-msg {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    padding: 20px 0;
+}
+
+/* Desain untuk setiap baris pesanan */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px dashed #ccc; /* Garis pemisah putus-putus biar estetik */
+}
+
+.item-name {
+    font-weight: 600;
+    color: #35292A;
+}
+
+.item-price {
+    font-weight: 500;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Jarak antara harga dan tombol silang */
+}
+
+/* Tombol hapus (silang merah) */
+.btn-remove {
+    background: #ffe6e6;
+    border: none;
+    color: #EC1A23;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%; /* Bikin tombolnya jadi bulat */
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+}
+
+.btn-remove:hover {
+    background: #EC1A23;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Bagian bawah keranjang (Total & Tombol) */
+.cart-footer {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 2px solid #eee;
+    text-align: right;
+}
+
+.cart-total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #35292A;
+    margin-bottom: 20px;
+}
+
+#total-price {
+    color: #EC1A23; /* Total harganya ditonjolkan dengan warna merah */
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.btn-checkout {
+    width: 100%;
+    padding: 14px;
+    background-color: #25D366; /* Warna hijau khas WhatsApp */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+}
+
+.btn-checkout:hover {
+    background-color: #128C7E; /* Hijau WA lebih gelap saat di-hover */
+    transform: translateY(-2px); /* Efek tombol naik sedikit */
+}
+/*
+=================================================
+          AKHIR KERANJANG BELANJA (CART)
+=================================================
+*/
+
+/*
+=================================================
+                     FOOTER
+=================================================
+*/
+footer {
+    background-color: #35292A;
+    color: white;
+    padding: 50px 20px 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info {
+    margin-bottom: 20px;
+}
+
+.footer-info h3 {
+    color: #EC1A23;
+    margin-bottom: 15px;
+}
+
+.footer-info h4 {
+    margin-bottom: 12px;
+}
+
+.footer-info a {
+    color: #EC1A23;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+    opacity: 0.8;
+    font-size: 14px;
+}
+/*
+=================================================
+                   AKHIR FOOTER
+=================================================
+*/
+
+
+/*
+/* 
+=================================================
+             HAMBURGER MENU (MOBILE)
+=================================================
+*/
+/* Sembunyikan di layar laptop */
+.hamburger {
+    display: none; 
+    font-size: 28px;
+    cursor: pointer;
+    color: #EC1A23;
+    position: relative;
+    z-index: 999; /* Biar posisinya paling depan dan bisa diklik */
+}
+
+/* RESPONSIVE (TAMPILAN MOBILE/HP) */
+@media (max-width: 768px) {
+    header {
+        position: relative; /* Biar menu dropdown-nya patuh sama header */
+    }
+
+    .hamburger {
+        display: block; /* Munculkan tombol ☰ di HP */
+    }
+    
+    #nav-menu {
+        display: none; /* Sembunyikan menu bawaan */
+        flex-direction: column;
+        width: 100%;
+        background-color: #35292A;
+        position: absolute;
+        top: 60px; /* Posisi di bawah header */
+        left: 0;
+        text-align: center;
+        padding-bottom: 15px;
+        z-index: 998; /* Posisi satu lapis di bawah tombol hamburger */
+        box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Class ini yang akan dipanggil oleh JavaScript! */
+    #nav-menu.aktif {
+        display: flex;
+    }
+    
+    nav a {
+        margin: 15px 0;
+        display: block;
+        padding: 10px;
+    }
+}
+/* 
+=================================================
+          AKHIR HAMBURGER MENU (MOBILE)
+=================================================
+*/
