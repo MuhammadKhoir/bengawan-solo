@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,16 @@
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header>
         <h2 class="logo">Bengawan Solo</h2>
         <nav>
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
-            <a href="#">Contact</a>        
-        </nav>  
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
     <main>
@@ -27,29 +29,29 @@
                 <p>Nikmati cita rasa tradisional dengan sentuhan modern.</p>
                 <a href="menu.html" class="btn">Lihat Menu</a>
             </div>
-        </section>        
+        </section>
         <!--End Banner-->
 
         <section id="ulasan" class="ulasan-section">
             <h2>Kata Mereka</h2>
             <div class="slider-container">
                 <button id="prev-btn" class="slider-btn">&lt;</button>
-                
+
                 <div class="slider-wrapper">
                     <div class="slider-track" id="slider-track">
-                        
+
                         <div class="slide-card">
                             <p class="bintang">⭐⭐⭐⭐⭐</p>
                             <p class="komen">"Ayam penyetnya juara! Sambalnya nendang banget pas buat makan siang."</p>
                             <h4>- Budi</h4>
                         </div>
-                        
+
                         <div class="slide-card">
                             <p class="bintang">⭐⭐⭐⭐⭐</p>
                             <p class="komen">"Nasi telurnya murah dan ngenyangin, porsi anak kos banget!"</p>
                             <h4>- Siti</h4>
                         </div>
-                        
+
                         <div class="slide-card">
                             <p class="bintang">⭐⭐⭐⭐</p>
                             <p class="komen">"Es teh manisnya seger, harganya juga bersahabat di kantong."</p>
@@ -58,11 +60,43 @@
 
                     </div>
                 </div>
-                
+
                 <button id="next-btn" class="slider-btn">&gt;</button>
             </div>
         </section>
     </main>
-<script src="scripts/main.js"></script>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Bengawan Solo</h3>
+                <p>Medan, Sumatera Utara</p>
+                <p>Telp: -</p>
+                <p>Email: -</p>
+            </div>
+
+            <div class="footer-info">
+                <h4>Jam Operasional</h4>
+                <p>Senin - Jumat</p>
+                <p>10:00 - 17.00 WIB</p>
+            </div>
+
+            <div class="footer-info">
+                <h4>Ikuti Kami</h4>
+                <p>
+                    <a href="#" target="_blank">Instagram</a><br>
+                    <a href="#" target="_blank">Facebook</a><br>
+                    <a href="#" target="_blank">TikTok</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bengawan Solo - All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
 </body>
+
 </html>
