@@ -9,10 +9,11 @@ html {
 }
 
 body {
-    background-color: #EDE4C2;    
+    background-color: #EDE4C2;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
+
 /*
 =================================================
         AKHIR PENGATURAN DASAR (GLOBAL)
@@ -75,7 +76,7 @@ nav a:hover {
 }
 
 .overlay {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     padding: 40px;
     text-align: center;
     color: white;
@@ -84,7 +85,7 @@ nav a:hover {
 
 .overlay h1 {
     font-family: 'Copperplate', 'Papyrus', fantasy;
-    font-size: 60px;        
+    font-size: 60px;
     margin-bottom: 10px;
 }
 
@@ -101,6 +102,7 @@ nav a:hover {
 .btn:hover {
     background-color: #c5141c;
 }
+
 /*
 =================================================
              AKHIR BANNER (HERO SECTION)
@@ -113,7 +115,8 @@ nav a:hover {
 */
 .ulasan-section {
     padding: 60px 20px;
-    background-color: #f4ede1; /* Warna krem yang sedikit beda biar menonjol */
+    background-color: #f4ede1;
+    /* Warna krem yang sedikit beda biar menonjol */
     text-align: center;
 }
 
@@ -129,26 +132,30 @@ nav a:hover {
     max-width: 600px;
     margin: 0 auto;
     position: relative;
-    gap: 15px; /* Jarak antara tombol dan kartu */
+    gap: 15px;
+    /* Jarak antara tombol dan kartu */
 }
 
 /* Ini "Jendela" pembatasnya */
 .slider-wrapper {
     width: 80%;
-    overflow: hidden; /* Sembunyikan kartu yang meluber keluar batas */
+    overflow: hidden;
+    /* Sembunyikan kartu yang meluber keluar batas */
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 /* Ini "Rel" keretanya */
 .slider-track {
     display: flex;
-    transition: transform 0.4s ease-in-out; /* Ini kunci animasi geser mulusnya! */
+    transition: transform 0.4s ease-in-out;
+    /* Ini kunci animasi geser mulusnya! */
 }
 
 /* Ini "Gerbong" ulasannya */
 .slide-card {
-    min-width: 100%; /* Memaksa tiap kartu lebarnya 100% dari jendela */
+    min-width: 100%;
+    /* Memaksa tiap kartu lebarnya 100% dari jendela */
     box-sizing: border-box;
     background: white;
     padding: 30px 20px;
@@ -185,6 +192,7 @@ nav a:hover {
     background-color: #35292A;
     transform: scale(1.1);
 }
+
 /*
 =================================================
           AKHIR SLIDER ULASAN (TESTIMONI)
@@ -217,7 +225,7 @@ nav a:hover {
     padding: 20px;
     width: 200px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
@@ -260,6 +268,7 @@ nav a:hover {
     background-color: #c5141c;
     transform: scale(1.03);
 }
+
 /*
 =================================================
              AKHIR DAFTAR MENU & KARTU
@@ -285,7 +294,7 @@ nav a:hover {
     left: 50%;
     transform: translate(-50%, 20px);
     z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     font-size: 15px;
     opacity: 0;
     transition: all 0.4s ease;
@@ -296,6 +305,7 @@ nav a:hover {
     opacity: 1;
     transform: translate(-50%, 0);
 }
+
 /*
 =================================================
            AKHIR NOTIFIKASI (TOAST POP-UP)
@@ -308,7 +318,8 @@ nav a:hover {
 */
 .cart-section {
     padding: 50px 20px;
-    background-color: #EDE4C2; /* Warna background sedikit lebih terang dari body */
+    background-color: #EDE4C2;
+    /* Warna background sedikit lebih terang dari body */
 }
 
 .cart-container {
@@ -317,8 +328,10 @@ nav a:hover {
     background: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Efek melayang/shadow yang lembut */
-    border-top: 5px solid #EC1A23; /* Garis aksen merah Bengawan Solo di atas */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    /* Efek melayang/shadow yang lembut */
+    border-top: 5px solid #EC1A23;
+    /* Garis aksen merah Bengawan Solo di atas */
 }
 
 .cart-container h2 {
@@ -345,7 +358,8 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 12px 0;
-    border-bottom: 1px dashed #ccc; /* Garis pemisah putus-putus biar estetik */
+    border-bottom: 1px dashed #ccc;
+    /* Garis pemisah putus-putus biar estetik */
 }
 
 .item-name {
@@ -358,7 +372,8 @@ nav a:hover {
     color: #555;
     display: flex;
     align-items: center;
-    gap: 15px; /* Jarak antara harga dan tombol silang */
+    gap: 15px;
+    /* Jarak antara harga dan tombol silang */
 }
 
 /* Tombol hapus (silang merah) */
@@ -368,7 +383,8 @@ nav a:hover {
     color: #EC1A23;
     width: 28px;
     height: 28px;
-    border-radius: 50%; /* Bikin tombolnya jadi bulat */
+    border-radius: 50%;
+    /* Bikin tombolnya jadi bulat */
     cursor: pointer;
     font-weight: bold;
     display: flex;
@@ -399,7 +415,8 @@ nav a:hover {
 }
 
 #total-price {
-    color: #EC1A23; /* Total harganya ditonjolkan dengan warna merah */
+    color: #EC1A23;
+    /* Total harganya ditonjolkan dengan warna merah */
     font-size: 24px;
     margin-left: 10px;
 }
@@ -407,7 +424,8 @@ nav a:hover {
 .btn-checkout {
     width: 100%;
     padding: 14px;
-    background-color: #25D366; /* Warna hijau khas WhatsApp */
+    background-color: #25D366;
+    /* Warna hijau khas WhatsApp */
     color: white;
     border: none;
     border-radius: 8px;
@@ -419,9 +437,12 @@ nav a:hover {
 }
 
 .btn-checkout:hover {
-    background-color: #128C7E; /* Hijau WA lebih gelap saat di-hover */
-    transform: translateY(-2px); /* Efek tombol naik sedikit */
+    background-color: #128C7E;
+    /* Hijau WA lebih gelap saat di-hover */
+    transform: translateY(-2px);
+    /* Efek tombol naik sedikit */
 }
+
 /*
 =================================================
           AKHIR KERANJANG BELANJA (CART)
@@ -479,6 +500,7 @@ footer {
     opacity: 0.8;
     font-size: 14px;
 }
+
 /*
 =================================================
                    AKHIR FOOTER
@@ -494,49 +516,56 @@ footer {
 */
 /* Sembunyikan di layar laptop */
 .hamburger {
-    display: none; 
+    display: none;
     font-size: 28px;
     cursor: pointer;
     color: #EC1A23;
     position: relative;
-    z-index: 999; /* Biar posisinya paling depan dan bisa diklik */
+    z-index: 999;
+    /* Biar posisinya paling depan dan bisa diklik */
 }
 
 /* RESPONSIVE (TAMPILAN MOBILE/HP) */
 @media (max-width: 768px) {
     header {
-        position: relative; /* Biar menu dropdown-nya patuh sama header */
+        position: relative;
+        /* Biar menu dropdown-nya patuh sama header */
     }
 
     .hamburger {
-        display: block; /* Munculkan tombol ☰ di HP */
+        display: block;
+        /* Munculkan tombol ☰ di HP */
     }
-    
+
     #nav-menu {
-        display: none; /* Sembunyikan menu bawaan */
+        display: none;
+        /* Sembunyikan menu bawaan */
         flex-direction: column;
         width: 100%;
         background-color: #35292A;
         position: absolute;
-        top: 60px; /* Posisi di bawah header */
+        top: 60px;
+        /* Posisi di bawah header */
         left: 0;
         text-align: center;
         padding-bottom: 15px;
-        z-index: 998; /* Posisi satu lapis di bawah tombol hamburger */
-        box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+        z-index: 998;
+        /* Posisi satu lapis di bawah tombol hamburger */
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     }
 
     /* Class ini yang akan dipanggil oleh JavaScript! */
     #nav-menu.aktif {
         display: flex;
     }
-    
+
     nav a {
         margin: 15px 0;
         display: block;
         padding: 10px;
     }
 }
+
 /* 
 =================================================
           AKHIR HAMBURGER MENU (MOBILE)
@@ -604,7 +633,7 @@ footer {
     position: fixed;
     z-index: 2000;
     inset: 0;
-    background: rgba(0,0,0,0.55);
+    background: rgba(0, 0, 0, 0.55);
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -617,7 +646,7 @@ footer {
     padding: 25px;
     border-radius: 15px;
     position: relative;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 .close-invoice {
@@ -648,7 +677,7 @@ footer {
     padding: 14px 18px;
     border-radius: 50px;
     font-weight: bold;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
     z-index: 1500;
     cursor: pointer;
     display: none;
@@ -673,7 +702,7 @@ footer {
     border-radius: 20px;
     font-size: 11px;
     font-weight: bold;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-checkout.loading {
@@ -735,7 +764,7 @@ footer {
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
 }
 
 .btn,
@@ -763,6 +792,7 @@ footer {
         opacity: 0;
         transform: scale(0.85) translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: scale(1) translateY(0);
@@ -778,6 +808,7 @@ footer {
         opacity: 0;
         transform: translateX(-15px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -792,9 +823,11 @@ footer {
     0% {
         transform: scale(0.8);
     }
+
     50% {
         transform: scale(1.12);
     }
+
     100% {
         transform: scale(1);
     }
@@ -808,9 +841,11 @@ footer {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.08);
     }
+
     100% {
         transform: scale(1);
     }
@@ -842,7 +877,7 @@ footer {
     background: white;
     padding: 22px;
     border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     border-left: 6px solid #EC1A23;
 }
 
@@ -905,7 +940,7 @@ footer {
 }
 
 .about-overlay {
-    background: rgba(0,0,0,0.55);
+    background: rgba(0, 0, 0, 0.55);
     padding: 40px;
     border-radius: 25px;
     text-align: center;
@@ -924,12 +959,13 @@ footer {
 }
 
 .about-page-container {
+    justify-content: center;
     max-width: 1150px;
     margin: 0 auto;
-    display: grid;
+    display: flex;
     grid-template-columns: 1.6fr 1fr;
     gap: 35px;
-    align-items: start;
+    align-items: center;
 }
 
 .about-page-text h2 {
@@ -956,7 +992,7 @@ footer {
     padding: 22px;
     border-radius: 18px;
     text-align: center;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
     transition: 0.3s ease;
 }
 
@@ -983,7 +1019,7 @@ footer {
     background: white;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
     border-top: 6px solid #EC1A23;
 }
 
@@ -1072,7 +1108,7 @@ footer {
     background: white;
     border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
     transition: 0.35s ease;
 }
 
@@ -1124,4 +1160,71 @@ footer {
     .team-header h2 {
         font-size: 34px;
     }
+}
+
+.documentation-section {
+    padding: 80px 20px;
+    background-color: #f4ede1;
+}
+
+.documentation-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.documentation-header h2 {
+    color: #35292A;
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.documentation-header p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.documentation-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.documentation-card {
+    overflow: hidden;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.documentation-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+
+    transition: 0.4s ease;
+}
+
+.doc-1 {
+    grid-column: span 2;
+}
+
+.doc-1 img {
+    object-position: center 20%;
+}
+
+.doc-2 img {
+    object-position: center 30%;
+}
+
+.doc-3 img {
+    object-position: center 30%;
+}
+
+.documentation-card:hover img {
+    transform: scale(1.08);
 }

@@ -406,7 +406,7 @@ if (copyInvoice) {
 
 if (sendWaInvoice) {
     sendWaInvoice.addEventListener('click', () => {
-        const nomorWA = "6280000000000"; // ganti dengan nomor admin
+        const nomorWA = "6281262454365"; 
         const pesan = encodeURIComponent(invoiceTerakhir);
         window.open(`https://wa.me/${nomorWA}?text=${pesan}`, '_blank');
     });
